@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Food Analysis Admin</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/database_style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>美食分析平台后台管理系统</h1>
+        <nav>
+            <a href="{{ url_for('index') }}">首页</a>
+            <a href="{{ url_for('add') }}">添加新数据</a>
+        </nav>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>
+
+

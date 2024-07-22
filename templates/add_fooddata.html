@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2 class="text-center">添加食品数据</h2>
+    <form method="post">
+        {{ form.hidden_tag() }}
+        <div>
+            {{ form.mid.label }} {{ form.mid() }}
+        </div>
+        <div>
+            {{ form.mname.label }} {{ form.mname() }}
+        </div>
+        <div>
+            {{ form.comments_num.label }} {{ form.comments_num() }}
+        </div>
+        <div>
+            {{ form.per_capita_con.label }} {{ form.per_capita_con() }}
+        </div>
+        <div>
+            {{ form.taste.label }} {{ form.taste() }}
+        </div>
+        <div>
+            {{ form.environment.label }} {{ form.environment() }}
+        </div>
+        <div>
+            {{ form.service.label }} {{ form.service() }}
+        </div>
+        <div>
+            {{ form.phone.label }} {{ form.phone() }}
+        </div>
+        <div>
+            {{ form.address.label }} {{ form.address() }}
+        </div>
+        <div>
+            {{ form.details.label }} {{ form.details() }}
+        </div>
+        <div>
+            {{ form.submit() }}
+        </div>
+    </form>
+{% endblock %}

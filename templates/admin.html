@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2 class="text-center">商家数据</h2>
+    <form class="search-bar clearfix" action="{{ url_for('search') }}" method="get">
+        <input type="text" name="query" placeholder="搜索...">
+        <input type="submit" value="搜索">
+    </form>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>名称</th>
+                <th>评论数量</th>
+                <th>人均消费</th>
+                <th>口味</th>
+                <th>环境</th>
+                <th>服务</th>
+                <th>电话</th>
+                <th>地址</th>
+                <th>详情</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in results %}
+            <tr>
+                <td>{{ item.mid }}</td>
+                <td>{{ item.mname }}</td>
+                <td>{{ item.comments_num }}</td>
+                <td>{{ item.per_capita_con }}</td>
+                <td>{{ item.taste }}</td>
+                <td>{{ item.environment }}</td>
+                <td>{{ item.service }}</td>
+                <td>{{ item.phone }}</td>
+                <td>{{ item.address }}</td>
+                <td>{{ item.details }}</td>
+                <td>
+                    <a class="btn btn-primary" href="{{ url_for('edit', mid=item.mid) }}">编辑</a>
+                    <a class="btn btn-danger" href="{{ url_for('delete', mid=item.mid) }}">删除</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

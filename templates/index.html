@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>10th小组-美食分析平台</title>
+        <meta name="description" content="Free Bootstrap Theme">
+        <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+        
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Pinyon+Script" rel="stylesheet">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles-merged.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.min.css') }}">
+
+        <!--[if lt IE 9]>
+        <script src="js/vendor/html5shiv.min.js"></script>
+        <script src="js/vendor/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+    <body>
+        <!-- Fixed navbar -->
+
+        <nav class="navbar navbar-default navbar-fixed-top probootstrap-navbar">
+            <div class="container">
+                <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html" title="FineOak">美食分析平台</a>
+                </div>
+
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="#" data-nav-section="welcome">首页</a></li>
+                    <li><a href="#" data-nav-section="specialties">美食雷达图</a></li>
+                    <li><a href="#" data-nav-section="menu">省钱套餐</a></li>
+                    <li><a href="#" data-nav-section="reservation">最佳口味</a></li>
+                    <li><a href="#" data-nav-section="events">大家都爱去</a></li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+
+
+
+        <section class="flexslider" data-section="welcome">
+            <ul class="slides">
+              <li style="background-image: url({{ url_for('static', filename='img/hero_bg_1.jpg') }})" class="overlay" data-stellar-background-ratio="0.5">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                      <div class="probootstrap-slider-text text-center probootstrap-animate probootstrap-heading">
+                        <h1 class="primary-heading">Welcome</h1>
+                        <h3 class="secondary-heading">美食分析平台</h3>
+                        <p class="sub-heading">A nice food analysis
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li style="background-image: url({{ url_for('static', filename='img/hero_bg_2.jpg') }})" class="overlay">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                      <div class="probootstrap-slider-text text-center probootstrap-animate probootstrap-heading">
+                        <h1 class="primary-heading">delicious</h1>
+                        <h3 class="secondary-heading">让我为您推荐美味</h3>
+                        <p class="sub-heading">A free bootstrap website template</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </li>
+              <li style="background-image: url({{ url_for('static', filename='img/hero_bg_3.jpg') }})" class="overlay">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                      <div class="probootstrap-slider-text text-center probootstrap-animate probootstrap-heading">
+                        <h1 class="primary-heading">Enjoy</h1>
+                        <h3 class="secondary-heading">周围美食不容错过</h3>
+                        <p class="sub-heading">A free bootstrap website template</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section>
+      
+
+          <section class="probootstrap-section probootstrap-bg-white">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-5 text-center probootstrap-animate">
+                  <div class="probootstrap-heading dark">
+                    <h1 class="primary-heading">Discover</h1>
+                    <h3 class="secondary-heading">网站介绍</h3>
+                    <span class="seperator">* * *</span>
+                  </div>
+                  <p>这是一个美食分析网站，旨在用最短的时间，最直观的方式为您展现恁周围的美味,希望通过这个平台，给您带来一个好胃口</p>
+                  <p><a href="#" class="probootstrap-custom-link">About Us</a></p>
+                </div>
+                <div class="col-md-6 col-md-push-1 probootstrap-animate">
+                  <p><img src="{{ url_for('static', filename='img/001.jpg') }}" alt="Free Bootstrap Template" class="img-responsive"></p>
+                </div>
+              </div>
+              <!-- END row -->
+            </div>
+          </section>
+
+          <section class="probootstrap-section-bg overlay" style="background-image: url({{ url_for('static', filename='img/hero_bg_2.jpg') }});" data-stellar-background-ratio="0.5" data-section="specialties">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 text-center probootstrap-animate">
+                  <div class="probootstrap-heading">
+                    <h2 class="primary-heading">Discover</h2>
+                    <h3 class="secondary-heading">美食雷达</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        <!-- probootstrap-bg-white -->
+        <section class="probootstrap-section">
+            <div class="container">
+            <div class="row">
+                <!-- <div class="probootstrap-cell-retro">
+                <div class="half"> -->
+
+                    <div class="probootstrap-cell probootstrap-animate" data-animate-effect="fadeIn">
+                    <div class="flex-container"></div>
+                    <h1>发现周围美味</h1>
+                    <div class="text text-center"></div>
+                        <iframe src="{{ url_for('static', filename='popular.html') }}" width="100%" height="600" frameborder="0">
+                        <p>Your browser does not support iframes.</p>
+                        </iframe>
+                    </div>
+                    </div>
+                    
+                </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section class="probootstrap-section-bg overlay" style="background-image: url({{ url_for('static', filename='img/hero_bg_4.jpg') }});"  data-stellar-background-ratio="0.5"  data-section="menu">
+            <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center probootstrap-animate">
+                <div class="probootstrap-heading">
+                    <h2 class="primary-heading">Discover</h2>
+                    <h3 class="secondary-heading">最热门餐厅</h3>
+                </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section class="probootstrap-section probootstrap-bg-white">
+            <div class="container">
+                <div class="row">
+                    {% for item in top_10_comments %}
+                        <div class="col-md-6">
+                            <ul class="menus">
+                                <li>
+                                    <div class="text">
+                                        <h3>{{ item['店名'] }}</h3>
+                                        <p>评论: {{ item['评论'] }} 条评价</p>
+                                        <p>口味: {{ item['口味'] }} 环境: {{ item['环境'] }} 服务: {{ item['服务'] }}</p>
+                                        <p>电话: {{ item['电话'] }}</p>
+                                        <p>地址: {{ item['地址'] }}</p>
+                                        <p><a href="{{ item['详情'] }}">详情页</a></p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+
+        <section class="probootstrap-section-bg overlay" style="background-image: url({{ url_for('static', filename='img/hero_bg_4.jpg') }});"  data-stellar-background-ratio="0.5"  data-section="menu">
+            <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center probootstrap-animate">
+                <div class="probootstrap-heading">
+                    <h2 class="primary-heading">Discover</h2>
+                    <h3 class="secondary-heading">省钱好去向</h3>
+                </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section class="probootstrap-section probootstrap-bg-white">
+            <div class="container">
+                <div class="row">
+                    {% for item in top_lowest_per_capita %}
+                        <div class="col-md-6">
+                            <ul class="menus">
+                                <li>
+                                    <div class="text">
+                                        <span class="price">¥{{ item['人均消费'] }}</span>
+                                        <h3>{{ item['店名'] }}</h3>
+                                        <p>评论: {{ item['评论'] }} 条评价</p>
+                                        <p>口味: {{ item['口味'] }} 环境: {{ item['环境'] }} 服务: {{ item['服务'] }}</p>
+                                        <p>电话: {{ item['电话'] }}</p>
+                                        <p>地址: {{ item['地址'] }}</p>
+                                        <p><a href="{{ item['详情'] }}">详情页</a></p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+
+        <section class="probootstrap-section-bg overlay" style="background-image: url({{ url_for('static', filename='img/hero_bg_4.jpg') }});"  data-stellar-background-ratio="0.5" data-section="events">
+            <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center probootstrap-animate">
+                <div class="probootstrap-heading">
+                    <h2 class="primary-heading">best servers</h2>
+                    <h3 class="secondary-heading">最佳餐厅前三甲</h3>
+                    <p>吃饭，最重要的是舒心~</p>
+                </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section class="probootstrap-section">
+            <div class="container">
+                <div class="row">
+                    {% for item in highest_env_service %}
+                    <div class="col-md-4 col-sm-4 probootstrap-animate">
+                        <div class="probootstrap-block-image">
+                            
+                            <div class="text">
+                                <span class="date">{{ item['日期']|default("July 22, 2024") }}</span>
+                                <h3><a href="{{ item['详情'] }}">{{ item['店名'] }}</a></h3>
+                                <p>评论: {{ item['评论'] }} 条评价 <br>
+                                人均消费: ¥{{ item['人均消费'] }}<br>
+                                口味: {{ item['口味'] }} 环境: {{ item['环境'] }} 服务: {{ item['服务'] }}<br>
+                                电话: {{ item['电话'] }} <br>
+                                地址: {{ item['地址'] }}</p>
+                                <p class=""><a href="{{ item['详情'] }}" class="probootstrap-custom-link link-sm">Read More</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+
+        <section class="probootstrap-section-bg overlay" style="background-image: url({{ url_for('static', filename='img/hero_bg_4.jpg') }});"  data-stellar-background-ratio="0.5" data-section="worest">
+            <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center probootstrap-animate">
+                <div class="probootstrap-heading">
+                    <h2 class="primary-heading">best servers</h2>
+                    <h3 class="secondary-heading">最有待进步餐厅</h3>
+                    <p>谁去谁倒霉~</p>
+                </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section class="probootstrap-section">
+            <div class="container">
+                <div class="row">
+                    {% for item in top_3_comments_lowest_service %}
+                    <div class="col-md-4 col-sm-4 probootstrap-animate">
+                        <div class="probootstrap-block-image">
+                            
+                            <div class="text">
+                                <span class="date">{{ item['日期']|default("July 22, 2024") }}</span>
+                                <h3><a href="{{ item['详情'] }}">{{ item['店名'] }}</a></h3>
+                                <p>评论: {{ item['评论'] }} 条评价 <br>
+                                人均消费: ¥{{ item['人均消费'] }}<br>
+                                口味: {{ item['口味'] }} 环境: {{ item['环境'] }} 服务: {{ item['服务'] }}<br>
+                                电话: {{ item['电话'] }} <br>
+                                地址: {{ item['地址'] }}</p>
+                                <p class=""><a href="{{ item['详情'] }}" class="probootstrap-custom-link link-sm">Read More</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+
+        <section class="probootstrap-section-bg overlay" style="background-image: url({{ url_for('static', filename='img/hero_bg_4.jpg') }});"  data-stellar-background-ratio="0.5" data-section="worest">
+            <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center probootstrap-animate">
+                <div class="probootstrap-heading">
+                    <h2 class="primary-heading">best servers</h2>
+                    <h3 class="secondary-heading">综合推荐</h3>
+                    <p>本市最受欢迎的餐厅哦~</p>
+                </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section class="probootstrap-section">
+            <div class="container">
+                <div class="row">
+                    {% for item in top_recommended %}
+                    <div class="col-md-4 col-sm-4 probootstrap-animate">
+                        <div class="probootstrap-block-image">
+                            
+                            <div class="text">
+                                <span class="date">{{ item['日期']|default("July 22, 2024") }}</span>
+                                <h3><a href="{{ item['详情'] }}">{{ item['店名'] }}</a></h3>
+                                <p>评论: {{ item['评论'] }} 条评价 <br>
+                                人均消费: ¥{{ item['人均消费'] }}<br>
+                                口味: {{ item['口味'] }} 环境: {{ item['环境'] }} 服务: {{ item['服务'] }}<br>
+                                电话: {{ item['电话'] }} <br>
+                                地址: {{ item['地址'] }}</p>
+                                <p class=""><a href="{{ item['详情'] }}" class="probootstrap-custom-link link-sm">Read More</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <section class="probootstrap-footer">
+            <div class="container">
+            <div class="row">
+                <div class="col-md-6 probootstrap-animate">
+                <div class="probootstrap-footer-widget">
+                    <h3>Locations</h3>
+                    <div class="row">
+                    <div class="col-md-6">
+                        <p> 198 West 21th Street, Suite 721 <br> 成都 华迪</p>
+                    </div>
+                    <div class="col-md-6">
+                        <p> 198 West 21th Street, Suite 721 <br> 成都 华迪</p>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col-md-6 probootstrap-animate">
+                <div class="probootstrap-footer-widget">
+                    <h3>Open Hours</h3>
+                    <div class="row">
+                    <div class="col-md-4">
+                        <p>Monday - Thursday <br> 5:30pm - 10:00pm</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p>Friday - Sunday <br> 5:30pm - 10:00pm</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p>Available for Catering <br> Email or Call Us</p>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="probootstrap-copyright">
+            <div class="container">
+            <div class="row">
+
+            </div>
+            </div>
+        </section>
+
+        <nav class="dba">
+            <a href="{{ url_for('admin') }}">后台管理系统入口</a>
+        </nav>
+
+        <script src="{{ url_for('static', filename='js/scripts.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/custom.min.js') }}"></script>
+
+
+        
+    </body>
+</html>
