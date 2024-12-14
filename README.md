@@ -1,6 +1,6 @@
 # Nice-Food-Analysis
 
-1、建立好数据库foodanalysis、创建好fooddata表格（可以运行foodanalysis.sql创建，也可以直接导入fooddata.csv）。mysql版本为5.7。
+1、在mysql中建立好数据库foodanalysis、创建好fooddata表格，注意mysql版本为5.7（可以运行foodanalysis.sql创建，也可以直接导入fooddata.csv）
 
 2、在config.py中配置好数据库链接信息。
 
